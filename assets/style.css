@@ -1,0 +1,39 @@
+/* One stylesheet for every app page on this site. Dark, serif, readable on a phone.
+   Pages reference it by relative path, because project Pages are served from a
+   subdirectory and a root-relative path would break. */
+:root {
+  color-scheme: dark;
+  --void: #0a0a0c;
+  --ash: #1c1c21;
+  --bone: #e6e0d2;
+  --ember: #d1552b;
+  --muted: #8c877c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 48px 16px 96px;
+  background: var(--void);
+  color: var(--bone);
+  font: 16px/1.65 ui-serif, Georgia, "Times New Roman", serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+h1 { font-size: 1.75rem; line-height: 1.2; margin: 0 0 .25em; letter-spacing: .01em; }
+h2 { font-size: 1.15rem; margin: 2.5em 0 .6em; color: var(--ember); letter-spacing: .02em; }
+p, li { margin: 0 0 1em; }
+ul { padding-left: 1.25em; }
+a { color: var(--bone); text-underline-offset: 3px; }
+a:hover { color: var(--ember); }
+.meta { color: var(--muted); font-size: .9rem; margin-bottom: 2.5em; }
+.meta a { color: var(--muted); }
+.crumb { color: var(--muted); font-size: .85rem; margin: 0 0 2em; letter-spacing: .04em; text-transform: uppercase; }
+.crumb a { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; margin: 0 0 1.5em; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: .55em .75em .55em 0; border-bottom: 1px solid var(--ash); }
+th { color: var(--muted); font-weight: normal; }
+.apps { list-style: none; padding: 0; }
+.apps li { border-bottom: 1px solid var(--ash); padding: 1.1em 0; margin: 0; }
+.apps .name { font-size: 1.1rem; }
+.apps .links { color: var(--muted); font-size: .9rem; margin-top: .35em; }
+footer { margin-top: 3.5em; padding-top: 1.5em; border-top: 1px solid var(--ash); color: var(--muted); font-size: .9rem; }
